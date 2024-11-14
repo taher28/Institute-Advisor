@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Institute Advisor</title>
+<link
+	href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
+	rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<header>
+		<h1>INSTITUTE ADVISOR</h1>
+		<hr>
+		<p>Find the best colleges across the state with ease</p>
+		<a href="logout">
+			<button
+				style="position: absolute; top: 10px; right: 20px; background-color: #34495E; color: white; font-weight: bold; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">
+				Logout</button>
+		</a>
+	</header>
+
+	<div class="container">
+		<form action="SearchServlet" method="post" class="search-bar">
+			<h2>Find Your Perfect College</h2>
+			<input type="text" name="collegeName"
+				placeholder="Enter college name "> <select name="district">
+				<option value="">Select District</option>
+				<option value="Mumbai_City">Mumbai</option>
+				<option value="Mumbai_Suburban">Mumbai Suburban</option>
+				<option value="Nashik">Nashik</option>
+				<option value="Pune">Pune</option>
+				<option value="Thane">Thane</option>
+			</select> <select name="course">
+				<option value="">Select Course</option>
+				<option value="ba">Bachelor of Arts (BA)</option>
+				<option value="bmm">Bachelor of Mass Media (BMM)</option>
+				<option value="bcom">Bachelor of Commerce (BCom)</option>
+				<option value="baf">Bachelor of Accounting and Finance
+					(BAF)</option>
+				<option value="bsc">Bachelor of Science (BSc)</option>
+				<option value="btech_cs">Bachelor of Technology in Computer
+					Science (BTech CS)</option>
+				<option value="btech_it">Bachelor of Technology in
+					Information Technology (BTech IT)</option>
+				<option value="mbbs">Bachelor of Medicine and Bachelor of
+					Surgery (MBBS)</option>
+				<option value="llb">Bachelor of Laws (LLB)</option>
+				<option value="mba">Master of Business Administration (MBA)</option>
+			</select> <select name="cutoff">
+				<option value="">Select Cutoff</option>
+				<option value="below-45">Below 45%</option>
+				<option value="45-65">45% - 65%</option>
+				<option value="65-85">65% - 85%</option>
+				<option value="85-95">85% - 95%</option>
+				<option value="above-95">Above 95%</option>
+			</select> <select name="ratings">
+				<option value="">Select Ratings</option>
+				<option value="1">1 Star</option>
+				<option value="2">2 Stars</option>
+				<option value="3">3 Stars</option>
+				<option value="4">4 Stars</option>
+				<option value="5">5 Stars</option>
+			</select> <select name="feesRange">
+				<option value="">Select Fees Range</option>
+				<option value="below-75000">Below ₹75000</option>
+				<option value="75000-100000">₹75000 - ₹100000</option>
+				<option value="100000-180000">₹100000 - ₹180000</option>
+				<option value="above-200000">Above ₹200000</option>
+			</select> <a href="search.jsp">
+				<button type="submit">Search</button>
+			</a>
+		</form>
+	</div>
+
+	<div class="support-help">
+		<h3>Need Help?</h3>
+		<p>
+			Contact our support team at: <a
+				href="mailto:support@instituteadvisor.com">support@instituteadvisor.com</a>
+		</p>
+		<p>Call us: +91-9152583872</p>
+	</div>
+</body>
+</html>

@@ -1,0 +1,148 @@
+@charset "UTF-8";
+
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #34495E;
+	overflow-y: auto; /* Enable vertical scrolling */
+}
+
+header {
+	background-color: #F44336;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+}
+
+header h1 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 36px;
+	margin: 0;
+}
+
+header p {
+	font-size: 18px;
+	margin: 10px 0;
+}
+
+header hr {
+	width: 50%;
+	border: 1px solid #fff;
+	margin: 10px auto;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 20px auto;
+	padding: 0 15px;
+}
+
+.search-bar {
+	background: #FFFFFF;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+.search-bar h2 {
+	margin: 0 0 20px;
+	font-size: 24px;
+}
+
+.search-bar input[type="text"], .search-bar select {
+	width: calc(100% - 22px);
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+}
+
+.search-bar button {
+	background-color: #F44336;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+.search-bar button:hover {
+	background-color: #FF6F61;
+}
+
+.results {
+	background: #fff;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+}
+
+.results h2 {
+	margin: 0 0 20px;
+	font-size: 24px;
+}
+
+.college-card {
+	background: #f9f9f9;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	padding: 15px;
+	margin-bottom: 10px;
+}
+
+.college-card h3 {
+	margin: 0 0 10px;
+}
+
+.college-card p {
+	margin: 0;
+}
+
+.college-card .ratings {
+	color: #ffcc00;
+}
+
+.college-card .ratings::before {
+	content: "★★★★★";
+	letter-spacing: 1px;
+	display: inline-block;
+}
+
+.college-card .ratings[data-rating="1"]::before {
+	content: "★☆☆☆☆";
+}
+
+.college-card .ratings[data-rating="2"]::before {
+	content: "★★☆☆☆";
+}
+
+.college-card .ratings[data-rating="3"]::before {
+	content: "★★★☆☆";
+}
+
+.college-card .ratings[data-rating="4"]::before {
+	content: "★★★★☆";
+}
+
+.college-card .ratings[data-rating="5"]::before {
+	content: "★★★★★";
+}
+
+.support-help {
+	background: #fff;
+	border-top: 1px solid #ddd;
+	padding: 20px;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.support-help h3 {
+	margin: 0 0 10px;
+}
+
+.support-help p {
+	margin: 0;
+}
