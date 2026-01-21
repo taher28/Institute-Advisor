@@ -9,21 +9,25 @@
 	rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 	
-<!-- Matomo -->
-<script>
-  var _paq = window._paq = window._paq || [];
-  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
+<script type="text/javascript">
+  var Countly = Countly || {};
+  Countly.q = Countly.q || [];
+
+  Countly.app_key = "3aa014ba212ac1744dbf46078959633ddaf1efd5";
+  Countly.url = "https://cloud.count.ly";
+
+  Countly.q.push(['track_sessions']);
+  Countly.q.push(['track_pageview']);
+
   (function() {
-    var u="https://institute-advisor.matomo.cloud/";
-    _paq.push(['setTrackerUrl', u+'matomo.php']);
-    _paq.push(['setSiteId', '1']);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.async=true; g.src='https://cdn.matomo.cloud/institute-advisor.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
+    var cly = document.createElement('script');
+    cly.type = 'text/javascript';
+    cly.async = true;
+    cly.src = 'https://cloud.count.ly/sdk/web/countly.min.js';
+    document.head.appendChild(cly);
   })();
 </script>
-<!-- End Matomo Code -->
+
 
 </head>
 <body>
